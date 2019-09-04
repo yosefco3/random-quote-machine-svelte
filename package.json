@@ -12,7 +12,9 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4"
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "sirv-cli": "^0.4.4",
+    "svelte-fa": "^2.0.2"
   },
   "scripts": {
     "build": "rollup -c",

@@ -3,6 +3,11 @@
  import Quote from "./Quote.svelte";
  import Button from "./Button.svelte";
 
+ 
+import Fa from 'svelte-fa'
+import { faTwitter} from '@fortawesome/free-brands-svg-icons'
+
+
  let quotes = "";
  let quote = "";
 
@@ -22,7 +27,7 @@
    quote = "";
    setTimeout(() => {
      quote = quotes[Math.floor(Math.random() * quotes.length)];
-   },1000);
+   },500);
  }
 </script>
 
@@ -48,6 +53,6 @@ id="new-quote">New Quote</Button>
 <Button 
 href="{`https://twitter.com/intent/tweet?text="${quote.quote}"-${quote.author}`}" 
 {quote} id="tweet-quote">
-Twit</Button>
+<Fa icon={faTwitter}/></Button>
 
 </div>
